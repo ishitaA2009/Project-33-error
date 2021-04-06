@@ -1,5 +1,5 @@
 class Snow{
-    constructor(x,y){
+    constructor(x,y,width,height){
         var options={
             friction:0.3,
             density:0.1,

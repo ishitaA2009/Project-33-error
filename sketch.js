@@ -15,7 +15,7 @@ function setup() {
   boy.shapeColor="red";
 
   snow = new Snow(200,0,10,3);
-  snow.scale=0.01;
+  
 }
 
 function draw() {
