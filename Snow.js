@@ -5,17 +5,21 @@ class Snow{
             density:0.1,
             restitution:0.2
         }
-       this.snow = loadImage("snow5.webp");
-        //snow.scale=00.1;
+
+        this.body = Bodies.circe(x, y, width, height, options);
+        this.width = width;
+        this.height = height;
+        this.image = loadImage("snow4.webp");
+        World.add(world, this.body);
     }
     display(){
 
-      //  var angle = this.body.angle;
+        var angle = this.body.angle;
         push();
-       // translate(this.body.position.x, this.body.position.y);
-        //rotate(angle);
+        translate(this.body.position.x, this.body.position.y);
+        rotate(angle);
         imageMode(CENTER);
-        image(this.snow,200, 0, this.width, this.height);
+        image(this.image,200, 0, this.width, this.height);
         pop();
 
     }
